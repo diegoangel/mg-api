@@ -1,0 +1,29 @@
+<project name="M2MDancerTest" default="dist" basedir=".">
+    <description>
+        M2M API ant build file
+    </description>
+    <!-- set global properties for this build -->
+    <property name="src" location="src"/>
+    <property name="build" location="build"/>
+    <property name="dist"  location="dist"/>
+
+    <target name="init">
+        <!-- Create the time stamp -->
+        <tstamp/>
+        <!-- Create the build directory structure used by compile -->
+        <mkdir dir="${build}"/>
+    </target>
+
+    <target name="test" depends="init" description="run the tests">
+        <!-- task to run the tests -->
+    </target>
+
+    <target name="dist" depends="test" description="generate the distribution">
+        <!-- Create the distribution directory -->
+        <mkdir dir="${dist}/lib"/>
+        <!-- Run some useful tasks here -->
+    </target>
+
+    <target name="clean" description="clean up" >
+    </target>
+</project>

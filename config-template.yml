@@ -1,0 +1,35 @@
+# This is the main configuration file of your Dancer2 app
+# env-related settings should go to environments/$env.yml
+# all the settings in this file will be loaded at Dancer's startup.
+
+# Your application's name
+appname: "API"
+
+# The default layout to use for your application (located in
+# views/layouts/main.tt)
+layout: "main"
+
+# when the charset is set to UTF-8 Dancer2 will handle for you
+# all the magic of encoding and decoding. You should not care
+# about unicode within your app when this setting is set (recommended).
+charset: "UTF-8"
+
+# template engine
+# simple: default and very basic template engine
+# template_toolkit: TT
+
+# template: "simple"
+
+template: "template_toolkit"
+
+# Plugins
+plugins:
+      DBIC:
+        default:
+          dsn: dbi:mysql:database=m2m;host=10.0.0.4 
+          schema_class: Infrastructure::DB::M2M::Schema
+          user: admin
+          password: circle
+          options:
+            RaiseError: 1
+            PrintError: 1

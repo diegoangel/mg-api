@@ -1,0 +1,56 @@
+Thumbs.db
+*.ipr
+.DS_Store?
+*.sublime-workspace
+.settings
+.project
+*.o
+.idea
+._*
+.metadata
+*.dll
+nbproject/
+*.so
+###################
+# Project generated files #
+.DS_Store
+*.iso
+*.com
+*.log
+*.sql
+.classpath
+############
+*.swp
+# OS generated files #
+# Packages #
+~*
+.Spotlight-V100
+# Backup generated files #
+*.7z
+*.rar
+*.out
+build
+*.iml
+*.class
+######################
+bin/
+*.tdy
+*.zip
+# Specific Project files #
+*.jar
+*.tar
+*.dmg
+ehthumbs.db
+*~
+*.nyt
+*.exe
+*.lock
+#*
+*.sublime-project
+*.gz
+*.sqlite
+config.yml
+*.tmp
+# Compiled source #
+.Trashes
+# Logs and databases #
